@@ -1,4 +1,11 @@
-# honkjs/store
+# honkjs/store [![npm-img]][npm-link] [![dep-img]][dep-link] [![dev-img]][dev-link]
+
+[npm-img]: https://img.shields.io/npm/v/@honkjs/store.svg?style=flat-square 'npm version'
+[npm-link]: https://www.npmjs.com/package/@honkjs/store
+[dep-img]: https://david-dm.org/honkjs/store.svg?style=flat-square 'dependency status'
+[dep-link]: https://david-dm.org/honkjs/store
+[dev-img]: https://david-dm.org/honkjs/store/dev-status.svg?style=flat-square 'dev dependency status'
+[dev-link]: https://david-dm.org/honkjs/store?type=dev
 
 A very simple state store with update subscriptions. For when [redux](https://redux.js.org/) is just a little too much.
 
