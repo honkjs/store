@@ -18,14 +18,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/honkjs/honk.git"
+    "url": "git+https://github.com/honkjs/store.git"
   },
   "author": "Kellen Piffner",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/honkjs/honk/issues"
+    "url": "https://github.com/honkjs/store/issues"
   },
-  "homepage": "https://github.com/honkjs/honk",
+  "homepage": "https://github.com/honkjs/store",
   "dependencies": {},
   "devDependencies": {
     "@types/jest": "^23.3.1",
