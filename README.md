@@ -1,11 +1,27 @@
-# honkjs/store [![npm-img]][npm-link] [![dep-img]][dep-link] [![dev-img]][dev-link]
+<div>
+  <!-- npm -->
+  <a href="https://www.npmjs.com/package/@honkjs/store">
+    <img src="https://img.shields.io/npm/v/@honkjs/store.svg?style=flat-square" alt="npm version" />
+  </a>
+  <!--  dependencies -->
+  <a href="https://david-dm.org/honkjs/store">
+    <img src="https://david-dm.org/honkjs/store.svg?style=flat-square" alt="dependency status" />
+  </a>
+  <!-- dev dependencies  -->
+  <a href="https://david-dm.org/honkjs/store&type=dev">
+    <img src="https://david-dm.org/honkjs/store/dev-status.svg?style=flat-square" alt="dev dependency status" />
+  </a>
+  <!-- coverage -->
+  <a href="https://codecov.io/github/honkjs/store">
+    <img src="https://img.shields.io/codecov/c/github/honkjs/store/master.svg?style=flat-square" alt="test coverage" />
+  </a>
+  <!-- build -->
+  <a href="https://travis-ci.org/honkjs/store">
+    <img src="https://img.shields.io/travis/honkjs/store/master.svg?style=flat-square" alt="build status" />
+  </a>
+</div>
 
-[npm-img]: https://img.shields.io/npm/v/@honkjs/store.svg?style=flat-square 'npm version'
-[npm-link]: https://www.npmjs.com/package/@honkjs/store
-[dep-img]: https://david-dm.org/honkjs/store.svg?style=flat-square 'dependency status'
-[dep-link]: https://david-dm.org/honkjs/store
-[dev-img]: https://david-dm.org/honkjs/store/dev-status.svg?style=flat-square 'dev dependency status'
-[dev-link]: https://david-dm.org/honkjs/store?type=dev
+# honkjs/store
 
 A very simple state store with update subscriptions. For when [redux](https://redux.js.org/) is just a little too much.
 
