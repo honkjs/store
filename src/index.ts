@@ -59,6 +59,7 @@ export function createStore<S>(initialState: S): IHonkStore<S> {
   let state = initialState;
   let currentListeners: ISubscribe<S>[] = [];
   let nextListeners: ISubscribe<S>[] = [];
+  let isSetting = false;
 
   function prepNextListeners() {
     // keep two copies so things can subscribe/unsubscribe during
@@ -69,16 +70,28 @@ export function createStore<S>(initialState: S): IHonkStore<S> {
   }
 
   function setState(action: (State: S) => S) {
-    state = action(state);
-    const listeners = (currentListeners = nextListeners);
-    for (let i = 0; i < listeners.length; i++) {
-      listeners[i](state);
+    if (isSetting) {
+      throw new Error('Already setting state.');
     }
+    try {
+      isSetting = true;
+      state = action(state);
+    } finally {
+      isSetting = false;
+    }
+    publish(state);
     return state;
   }
 
   function getState() {
     return state;
+  }
+
+  function publish(state: S) {
+    const listeners = (currentListeners = nextListeners);
+    for (let i = 0; i < listeners.length; i++) {
+      listeners[i](state);
+    }
   }
 
   function subscribe(listener: ISubscribe<S>): IUnsubscribe {
