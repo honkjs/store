@@ -179,3 +179,23 @@ test('can remove listeners within a subscription', () => {
   expect(store.getState().count).toBe(10);
   expect(test).toBe(1); // didn't call the sub
 });
+
+test('cannot nest setStates', () => {
+  const state = {
+    count: 0,
+  };
+  const store = createStore(state);
+
+  expect(() => {
+    store.setState((s) => {
+      store.setState((s2) => {
+        s2.count = 99;
+        return s2;
+      });
+      return s;
+    });
+  }).toThrowError();
+
+  // didn't change
+  expect(store.getState().count).toBe(0);
+});
