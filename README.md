@@ -23,6 +23,8 @@
 
 # honkjs/store
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/honkjs/store.svg)](https://greenkeeper.io/)
+
 A very simple state store with update subscriptions. For when [redux](https://redux.js.org/) is just a little too much.
 
 Store doesn't have any dependencies on honk, and can be used more as a utility library.
