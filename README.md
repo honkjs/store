@@ -3,27 +3,13 @@
   <a href="https://www.npmjs.com/package/@honkjs/store">
     <img src="https://img.shields.io/npm/v/@honkjs/store.svg?style=flat-square" alt="npm version" />
   </a>
-  <!--  dependencies -->
-  <a href="https://david-dm.org/honkjs/store">
-    <img src="https://david-dm.org/honkjs/store.svg?style=flat-square" alt="dependency status" />
-  </a>
-  <!-- dev dependencies  -->
-  <a href="https://david-dm.org/honkjs/store&type=dev">
-    <img src="https://david-dm.org/honkjs/store/dev-status.svg?style=flat-square" alt="dev dependency status" />
-  </a>
   <!-- coverage -->
   <a href="https://codecov.io/github/honkjs/store">
     <img src="https://img.shields.io/codecov/c/github/honkjs/store/master.svg?style=flat-square" alt="test coverage" />
   </a>
-  <!-- build -->
-  <a href="https://travis-ci.org/honkjs/store">
-    <img src="https://img.shields.io/travis/honkjs/store/master.svg?style=flat-square" alt="build status" />
-  </a>
 </div>
 
 # honkjs/store
-
-[![Greenkeeper badge](https://badges.greenkeeper.io/honkjs/store.svg)](https://greenkeeper.io/)
 
 A very simple state store with update subscriptions. For when [redux](https://redux.js.org/) is just a little too much.
 
