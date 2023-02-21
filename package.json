@@ -1,7 +1,7 @@
 {
   "name": "@honkjs/store",
-  "version": "1.0.4",
-  "description": "A simple state store with subscriptions for honk.",
+  "version": "1.0.5",
+  "description": "A simple state store with subscriptions.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
@@ -12,9 +12,7 @@
   "scripts": {
     "build": "tsc",
     "watch": "tsc -w",
-    "test": "jest",
-    "version": "tsc",
-    "release": "np"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
